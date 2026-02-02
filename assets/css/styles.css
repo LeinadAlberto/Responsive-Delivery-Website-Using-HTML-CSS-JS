@@ -419,8 +419,27 @@ img {
 .button:hover {
 	background-color: var(--first-color-alt);
 }
-/*=============== SERVICE ===============*/
 
+/*=============== SERVICE ===============*/
+.service__container {
+	grid-template-columns: 220px;
+	justify-content: center;
+	row-gap: 2rem;
+}
+
+.service__card {
+	text-align: center;
+}
+
+.service__img {
+	width: 150px;
+	margin: 0 auto 1.5rem;
+}
+
+.service__title {
+	font-size: var(--h3-font-size);
+	margin-bottom: .5rem;
+}
 
 /*=============== MENU ===============*/
 
@@ -461,19 +480,40 @@ img {
 	}
 }
 
+/* For medium devices */
 @media screen and (max-width: 540px) {
 	.nav__menu {
 		width: 50%;
 	}
+
+	.home__container {
+		grid-template-columns: 380px;
+		justify-content: center;
+	}
 }
 
-/* For medium devices */
-
+@media screen and (min-width: 768px) {
+	.service__container {
+		grid-template-columns: repeat(2, 220px);
+	}
+}
 
 /* For large devices */
 @media screen and (min-width: 1150px) {
 	.container {
 		margin-inline: auto;
+	}
+
+	.section {
+		padding-block: 7rem 2rem;
+	}
+
+	.section__title {
+		margin-bottom: 3.5rem;
+	}
+
+	.section__subtitle {
+		margin-bottom: .5rem;
 	}
 
 	.nav {
@@ -499,6 +539,16 @@ img {
 		display: flex;
 		column-gap: 4rem;
 		align-items: center;
+	}
+
+	.service__container {
+		grid-template-columns: repeat(3, 220px);
+		column-gap: 10rem;
+	}
+
+	.service__img {
+		width: 180px;
+		margin-bottom: 2rem;
 	}
 }
 
