@@ -253,7 +253,9 @@ img {
 }
 
 /* Add shadow header */
-
+.shadow-header {
+	box-shadow: var(--shadow-big);
+}
 
 /* Active link */
 
@@ -386,11 +388,19 @@ img {
 	top: 1rem;
 	left: 1rem;
 }
+
 .home__comment::after {
 	content: close-quote;
 	position: absolute;
 	right: 1rem;
 	bottom: 0;
+}
+
+.home__comment::before, 
+.home__comment::after {
+	font-size: 2rem;
+	font-weight: var(--font-semi-bold);
+	color: var(--first-color);
 }
 
 
@@ -444,6 +454,10 @@ img {
 @media screen and (max-width: 360px) {
 	.container {
 		margin-inline: 1rem;
+	}
+
+	.home__image {
+		width: 100%;
 	}
 }
 
