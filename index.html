@@ -306,9 +306,9 @@
 						<h4 class="section__subtitle">OUR REVIEWS</h4>
 						<h2 class="section__title">What They Say?</h2>
 
-						<div class="reviews__swiper">
-							<div>
-								<article class="reviews__card">
+						<div class="reviews__swiper swiper">
+							<div class="swiper-wrapper">
+								<article class="reviews__card swiper-slide">
 									<div class="reviews__profile">
 										<img src="assets/img/reviews-img-1.png" alt="image" class="reviews__photo">
 
@@ -336,7 +336,7 @@
 									</p>
 								</article>
 
-								<article class="reviews__card">
+								<article class="reviews__card swiper-slide">
 									<div class="reviews__profile">
 										<img src="assets/img/reviews-img-2.png" alt="image" class="reviews__photo">
 
@@ -364,7 +364,7 @@
 									</p>
 								</article>
 
-								<article class="reviews__card">
+								<article class="reviews__card swiper-slide">
 									<div class="reviews__profile">
 										<img src="assets/img/reviews-img-3.png" alt="image" class="reviews__photo">
 
@@ -391,8 +391,17 @@
 										delivery. I highly recommend food to you.
 									</p>
 								</article>
+							</div><!-- /.swiper-wrapper -->
+
+							<!-- Navigation Buttons -->
+							<div class="swiper-button-prev">
+								<i class="ri-arrow-left-s-line"></i>
 							</div>
-						</div>
+
+							<div class="swiper-button-next">
+								<i class="ri-arrow-right-s-line"></i>
+							</div>
+						</div><!-- /.swiper -->
 					</div><!-- /.reviews__content -->
 
 					<div class="reviews__image">
@@ -424,7 +433,7 @@
 		<script src=""></script>
 
 		<!--=============== SWIPER JS ===============-->
-		<script src=""></script>
+		<script src="assets/js/swiper-bundle.min.js"></script>
 
 		<!--=============== MAIN JS ===============-->
 		<script src="assets/js/main.js"></script>
