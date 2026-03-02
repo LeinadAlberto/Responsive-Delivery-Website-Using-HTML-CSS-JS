@@ -44,10 +44,10 @@ const swiperReviews = new Swiper('.reviews__swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    /* autoplay: {
+    autoplay: {
         delay: 3000,
         disableOnInteraction: false,
-    } */
+    }
 })
 
 
