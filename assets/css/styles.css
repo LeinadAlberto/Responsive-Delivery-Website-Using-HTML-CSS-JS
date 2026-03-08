@@ -857,12 +857,6 @@ img {
 	font-size: var(--small-font-size);
 }
 
-
-
-
-
-
-
 /*=============== SCROLL BAR ===============*/
 
 
@@ -902,6 +896,10 @@ img {
 	.reviews__comment {
 		width: 85%;
 	}
+
+	.footer__content {
+		gap: 2rem;
+	}
 }
 
 /* For medium devices */
@@ -925,6 +923,10 @@ img {
 		width: 380px;
 		margin-inline: auto;
 	}
+
+	.footer__form {
+		width: 360px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -935,6 +937,15 @@ img {
 	.menu__container {
 		grid-template-columns: repeat(3, 180px);
 	}
+
+	.footer__content {
+		grid-template-columns: repeat(3, max-content);
+	}
+
+	.footer__newsletter {
+		grid-column: initial;
+	}
+
 }
 
 /* For large devices */
@@ -1213,6 +1224,23 @@ img {
 	.map__content {
 		grid-template-columns: repeat(2, max-content);
 		gap: 4rem 5rem;
+	}
+
+	.footer {
+		padding-block: 6rem 3rem;
+	}
+
+	.footer__container {
+		grid-template-columns: repeat(2, max-content);
+		justify-content: space-between;
+	}
+
+	.footer__content {
+		column-gap: 5rem;
+	}
+
+	.footer__form {
+		width: 330px;
 	}
 }
 
